@@ -1,0 +1,30 @@
+{
+  "name": "testcafe",
+  "version": "1.0.0",
+  "description": "A demo for testcafe",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanmingWu-TW/Testcafe-sample.git"
+  },
+  "keywords": [
+    "testcafe"
+  ],
+  "dependencies": {
+    "date-utils": "^1.2.21",
+    "async": "^3.2.0",
+    "chai": "^4.2.0",
+    "testcafe": "^1.15.0",
+    "testcafe-reporter-st-html": "^1.0.0",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0"
+  },
+  "author": "wuhanming",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HanmingWu-TW/Testcafe-sample/issues"
+  },
+  "homepage": "https://github.com/HanmingWu-TW/Testcafe-sample#readme"
+}
