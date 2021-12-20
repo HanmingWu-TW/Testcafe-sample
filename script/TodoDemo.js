@@ -1,4 +1,5 @@
 import {RequestLogger, Selector} from 'testcafe';
+import PageDemo from '../tools/pages/pageDemo'
 const {expect} = require("chai");
 
 const simpleLogger = RequestLogger('', {
@@ -14,5 +15,7 @@ test.requestHooks(simpleLogger)('entry test', async t=>{
     const addInput = Selector('.new-todo');
     await t.expect(addInput.exists).eql(true, 'should add input visible');
     await t.typeText(addInput, 'kop');
+
+    // await t.typeText(PageDemo.addTodoButton, 'kop');
     await t.pressKey('enter');
 })

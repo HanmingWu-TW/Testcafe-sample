@@ -11,10 +11,7 @@ createTestCafe()
         const stream = fs.createWriteStream(`./web-chrome-report.html`);
         return runner
             .src([
-                path.join(__dirname, './script/MainMenu/*.js'),
-                path.join(__dirname, './script/MarketingCentral/*/*.js'),
-                path.join(__dirname, './script/OperatingPlatform/*/*.js'),
-                path.join(__dirname, './script/SystemSetting/*.js'),
+                path.join(__dirname, './script/TodoDemo.js')
             ])
             // .browsers('chrome:headless --lang=zh-cn')
             .browsers('chrome')
@@ -34,7 +31,7 @@ createTestCafe()
             )
             .reporter('st-html', stream)
             .run({
-                    skipJsErrors: true,
+                    // skipJsErrors: true,
                     // quarantineMode: true,
                     assertionTimeout: 10000,
                     pageLoadTimeout: 10000,
