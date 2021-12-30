@@ -40,4 +40,4 @@ const runTest = async function (host, port, browser) {
         });
 };
 
-runTest('192.168.1.6', 1111, 'test')
+runTest('0.0.0.0', 1111, 'test')

@@ -36,7 +36,7 @@ createTestCafe()
                     assertionTimeout: 10000,
                     pageLoadTimeout: 10000,
                     selectorTimeout: 10000,
-                    // speed: 0.8
+                    speed: 0.1
                 }
             )
     })
