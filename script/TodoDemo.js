@@ -1,5 +1,7 @@
 import {RequestLogger, Selector} from 'testcafe';
 import PageDemo from '../tools/pages/pageDemo'
+import {Role} from 'testcafe';
+import {AdminAccount} from "../tools/roles/rolesDemo";
 const {expect} = require("chai");
 
 const simpleLogger = RequestLogger('', {
